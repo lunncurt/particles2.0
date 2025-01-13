@@ -1,6 +1,8 @@
 #include "util/cl.hpp"
 #include "util/part.hpp"
 #include <SFML/Graphics.hpp>
+#include <SFML/Graphics/CircleShape.hpp>
+#include <SFML/Graphics/RectangleShape.hpp>
 #include <time.h>
 
 #define SIZE 10000
@@ -31,7 +33,7 @@ int main() {
     // Draw the particles
 
     sf::CircleShape particle;
-    particle.setRadius(1.0);
+    particle.setRadius(0.5f);
 
 
     for (size_t i = 0; i < SIZE; i++) {
